@@ -1,8 +1,19 @@
 public class Main {
     public static void main(String[] args) {
 
+    String message = """
+                        
+                        
+                        """;
 
 
-        System.out.println(cryptography.caesarShiftClassic("Not that kind of test", 20));
+
+
+
+      String decoded = cryptography.caesarDecoder(message, cryptography.freqAnalysis(message));
+
+      System.out.println("Decoded: " + decoded);
+
+
     }
 }
